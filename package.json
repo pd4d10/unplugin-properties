@@ -12,6 +12,10 @@
     "esbuild",
     "properties"
   ],
+  "scripts": {
+    "build": "rm -rf dist && node build.mjs && tsc",
+    "prepublishOnly": "npm run build"
+  },
   "devDependencies": {
     "@types/node": "^16.4.13",
     "esbuild": "^0.12.19",
