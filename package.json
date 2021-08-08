@@ -1,11 +1,17 @@
 {
   "name": "esbuild-plugin-properties",
   "version": "0.0.1",
-  "type": "module",
-  "main": "index.js",
+  "main": "dist/index.js",
   "repository": "git@github.com:pd4d10/esbuild-plugin-properties.git",
   "author": "Rongjian Zhang",
   "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "esbuild",
+    "properties"
+  ],
   "devDependencies": {
     "@types/node": "^16.4.13",
     "esbuild": "^0.12.19",
