@@ -1,6 +1,7 @@
 {
   "name": "esbuild-plugin-properties",
   "version": "0.0.1",
+  "type": "module",
   "main": "dist/index.js",
   "repository": "git@github.com:pd4d10/esbuild-plugin-properties.git",
   "author": "Rongjian Zhang",
@@ -13,13 +14,16 @@
     "properties"
   ],
   "scripts": {
-    "build": "rm -rf dist && node build.mjs && tsc",
+    "dev": "tsc --watch",
+    "build": "rm -rf dist && tsc",
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "@types/node": "^16.4.13",
     "esbuild": "^0.12.19",
-    "properties": "^1.2.1",
     "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "properties": "^1.2.1"
   }
 }

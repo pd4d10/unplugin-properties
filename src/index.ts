@@ -9,10 +9,11 @@ export default function propertiesPlugin(): Plugin {
         { filter: /\.properties$/, namespace: "file" },
         async (args) => {
           const content = await fs.promises.readFile(args.path, "utf-8");
-          const obj = await require("properties").parse(content);
+          // @ts-ignore
+          const { parse } = await import("properties");
 
           return {
-            contents: JSON.stringify(obj),
+            contents: JSON.stringify(parse(content)),
             loader: "json",
           };
         }
