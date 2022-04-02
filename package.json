@@ -1,16 +1,16 @@
 {
-  "name": "esbuild-plugin-properties",
+  "name": "unplugin-properties",
   "version": "0.2.0",
   "type": "module",
   "main": "dist/index.js",
-  "repository": "git@github.com:pd4d10/esbuild-plugin-properties.git",
+  "repository": "pd4d10/unplugin-properties",
   "author": "Rongjian Zhang",
   "license": "MIT",
   "files": [
     "dist"
   ],
   "keywords": [
-    "esbuild",
+    "unplugin",
     "properties"
   ],
   "scripts": {
@@ -19,11 +19,10 @@
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
-    "@types/node": "^16.4.13",
-    "esbuild": "^0.12.19",
-    "typescript": "^4.3.5"
+    "typescript": "^4.6.3"
   },
   "dependencies": {
-    "properties": "^1.2.1"
+    "properties": "^1.2.1",
+    "unplugin": "^0.6.1"
   }
 }
