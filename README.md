@@ -1,20 +1,49 @@
-# esbuild-plugin-properties
+# unplugin-properties
 
-An ESBuild plugin to load [properties](https://en.wikipedia.org/wiki/.properties) files.
+[![npm](https://img.shields.io/npm/v/unplugin-properties)](https://www.npmjs.com/package/unplugin-properties)
+
+An Vite/Rollup/Webpack/esbuild plugin to load [properties](https://en.wikipedia.org/wiki/.properties) files.
 
 ## Usage
 
-```js
-import esbuild from "esbuild";
-import propertiesPlugin from "esbuild-plugin-properties";
+### Vite
 
-esbuild.build({
-  // ...
+```ts
+// vite.config.ts
+import properties from "unplugin-properties";
+
+export default defineConfig({
   plugins: [
     // ...
-    propertiesPlugin(),
+    properties.vite(),
   ],
 });
+```
+
+### Rollup
+
+```js
+// rollup.config.js
+import properties from "unplugin-properties";
+
+export default {
+  plugins: [
+    // ...
+    properties(),
+  ],
+};
+```
+
+### Webpack
+
+```js
+// webpack.config.js
+module.exports = {
+  plugins: [
+    // ...
+    require("unplugin-properties").webpack(),
+  ],
+};
 ```
 
 ## License
