@@ -29,7 +29,7 @@ import properties from "unplugin-properties";
 export default {
   plugins: [
     // ...
-    properties(),
+    properties.rollup(),
   ],
 };
 ```
@@ -44,6 +44,20 @@ module.exports = {
     require("unplugin-properties").webpack(),
   ],
 };
+```
+
+### esbuild
+
+```js
+import properties from "unplugin-properties";
+
+require("esbuild").build({
+  // ...
+  plugins: [
+    // ...
+    properties.esbuild(),
+  ],
+});
 ```
 
 ## License
