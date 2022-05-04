@@ -1,16 +1,16 @@
-lockfileVersion: 5.3
+lockfileVersion: 5.4
 
 specifiers:
   properties: ^1.2.1
-  typescript: ^4.6.3
-  unplugin: ^0.6.1
+  typescript: ^4.6.4
+  unplugin: ^0.6.2
 
 dependencies:
   properties: 1.2.1
-  unplugin: 0.6.1
+  unplugin: 0.6.2
 
 devDependencies:
-  typescript: 4.6.3
+  typescript: 4.6.4
 
 packages:
 
@@ -124,14 +124,14 @@ packages:
       is-number: 7.0.0
     dev: false
 
-  /typescript/4.6.3:
-    resolution: {integrity: sha512-yNIatDa5iaofVozS/uQJEl3JRWLKKGJKh6Yaiv0GLGSuhpFJe7P3SbHZ8/yjAHRQwKRoA6YZqlfjXWmVzoVSMw==}
+  /typescript/4.6.4:
+    resolution: {integrity: sha512-9ia/jWHIEbo49HfjrLGfKbZSuWo9iTMwXO+Ca3pRsSpbsMbc7/IU8NKdCZVRRBafVPGnoJeFL76ZOAA84I9fEg==}
     engines: {node: '>=4.2.0'}
     hasBin: true
     dev: true
 
-  /unplugin/0.6.1:
-    resolution: {integrity: sha512-cQqRCgQ2v/Q4fPIWNVZ6sNIDdl5v8JXOnlsUOsGzT4fblTONoPWaytiYSpu5qJ9lvSDZYAQN6BRVo3XQoZMfUQ==}
+  /unplugin/0.6.2:
+    resolution: {integrity: sha512-+QONc2uBFQbeo4x5mlJHjTKjR6pmuchMpGVrWhwdGFFMb4ttFZ4E9KqhOOrNcm3Q8NNyB1vJ4s5e36IZC7UWYw==}
     peerDependencies:
       esbuild: '>=0.13'
       rollup: ^2.50.0
