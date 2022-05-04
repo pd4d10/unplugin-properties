@@ -2,7 +2,16 @@
   "name": "unplugin-properties",
   "version": "0.3.0",
   "type": "module",
-  "main": "dist/index.js",
+  "types": "./dist/index.d.ts",
+  "module": "./dist/index.mjs",
+  "main": "./dist/index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
   "repository": "pd4d10/unplugin-properties",
   "author": "Rongjian Zhang",
   "license": "MIT",
@@ -15,7 +24,7 @@
   ],
   "scripts": {
     "dev": "tsc --watch",
-    "build": "rm -rf dist && tsc",
+    "build": "rm -rf dist && tsc && tsc --module esnext --outDir temp && mv temp/index.js dist/index.mjs && rm -rf temp",
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
